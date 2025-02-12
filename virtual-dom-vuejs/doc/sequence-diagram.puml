@@ -1,0 +1,11 @@
+@startuml
+actor User
+participant App
+participant Counter
+
+User -> App: Open App
+App -> Counter: Render Counter
+User -> Counter: Click "+" button
+Counter -> Counter: count++
+Counter -> App: Re-render Counter
+@enduml

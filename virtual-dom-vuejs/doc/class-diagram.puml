@@ -1,0 +1,14 @@
+@startuml
+class App {
+    +components: { Counter }
+    +template: JSX/HTML
+}
+
+class Counter {
+    -count: ref<number>
+    +increment(): void
+    +template: JSX/HTML
+}
+
+App --> Counter : uses
+@enduml
