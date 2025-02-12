@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <h1>Vue Counter App</h1>
-    //TODO
+    <Counter></Counter>
   </div>
 </template>
 
