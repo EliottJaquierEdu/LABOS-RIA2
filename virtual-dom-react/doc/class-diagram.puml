@@ -1,0 +1,13 @@
+@startuml
+class App {
+    +render(): JSX.Element
+}
+
+class Counter {
+    -count: number
+    +setCount: function
+    +render(): JSX.Element
+}
+
+App --> Counter : uses
+@enduml
