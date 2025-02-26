@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+h1 {
+  color: #333;
+}
+
+#name-container {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#items-container {
+  font-size: 18px;
+}

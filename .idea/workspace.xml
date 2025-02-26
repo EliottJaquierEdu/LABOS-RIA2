@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2234221-fe91-4632-9915-ec31783a0e41" name="Changes" comment="test(virtual-dom-vue): test Counter.vue" />
+    <list default="true" id="a2234221-fe91-4632-9915-ec31783a0e41" name="Changes" comment="feat: enhance Vite configuration with path aliasing and testing setup">
+      <change afterPath="$PROJECT_DIR$/data-binding-vue/tests/DataBinding.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-binding-vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/data-binding-vue/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-binding-vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-binding-vue/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-binding-vue/src/assets/vue.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-binding-vue/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/data-binding-vue/src/components/DataBinding.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-binding-vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/data-binding-vue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-binding-vue/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/data-binding-vue/src/assets/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="98aab7c6b19902a47122d822f09cd4b861f24dc8" />
+        <entry key="$PROJECT_DIR$" value="feature/virtual-dom-vue" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,28 +58,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Jest.All Tests.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Env Test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/virtual-dom-vue&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/eliott/Scool/bi/LABOS-RIA2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/eliott/Scool/bi/LABOS-RIA2/envTest/node_modules/jest&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.JavaScript&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/eliott/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Jest.All Tests.executor": "Run",
+    "Jest.Env Test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/data-binding-vue",
+    "last_opened_file_path": "/Users/eliott/Scool/bi/LABOS-RIA2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/eliott/Scool/bi/LABOS-RIA2/envTest/node_modules/jest",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "Settings.JavaScript",
+    "ts.external.directory.path": "/Users/eliott/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data-binding-vue/src/assets" />
       <recent name="$PROJECT_DIR$/envTest" />
     </key>
   </component>
@@ -119,6 +129,7 @@
       <workItem from="1739370518064" duration="1233000" />
       <workItem from="1739372131128" duration="4282000" />
       <workItem from="1740348546675" duration="23000" />
+      <workItem from="1740580352390" duration="476000" />
     </task>
     <task id="LOCAL-00001" summary="feat(virtual-dom-react): Add counter component in App">
       <option name="closed" value="true" />
@@ -184,7 +195,39 @@
       <option name="project" value="LOCAL" />
       <updated>1739374165246</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: initialize Vue 3 + Vite project with essential files">
+      <option name="closed" value="true" />
+      <created>1740580577637</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740580577637</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: update package.json for data-binding-lab-vue with new dependencies and scripts">
+      <option name="closed" value="true" />
+      <created>1740580611182</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740580611182</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: update package.json for data-binding-lab-vue with new dependencies and scripts">
+      <option name="closed" value="true" />
+      <created>1740580631447</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740580631447</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: enhance Vite configuration with path aliasing and testing setup">
+      <option name="closed" value="true" />
+      <created>1740580636552</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740580636552</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +253,10 @@
     <MESSAGE value="feat(virtual-dom-vue): implement button to increment counter" />
     <MESSAGE value="chore(virtual-dom-vue): add test support" />
     <MESSAGE value="test(virtual-dom-vue): test Counter.vue" />
-    <option name="LAST_COMMIT_MESSAGE" value="test(virtual-dom-vue): test Counter.vue" />
+    <MESSAGE value="feat: initialize Vue 3 + Vite project with essential files" />
+    <MESSAGE value="feat: update package.json for data-binding-lab-vue with new dependencies and scripts" />
+    <MESSAGE value="feat: enhance Vite configuration with path aliasing and testing setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: enhance Vite configuration with path aliasing and testing setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
